@@ -1,51 +1,36 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body{
-            align-content: center;
-            background-image:url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-        }
-        img{
-            width: 10%;
-            height: 10%;
-        }
-        table{
-            width: 40%;
-            align: center;
-            margin: auto;
-            border-collapse: collapse;
-            border: 1px solid;
-            background-color: #ccffff;
-        }
-        td,th{
-            border: 1px solid;
-            height: 30px;
-        }
-        h1{
-            border: 1px solid;
-            border-color: black;
-            background-color: #ffddff;
-            width: 20%;
-            border-radius: 20px
-        }
-    </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script >
+            $(function(){
+                $('#name').hide(0)
+                $('#img1').hide(0)
+                $('#tb1').hide(0)
+                $('#ul1').hide(0)
+                $('#contack').hide(0)
+                $('#name').delay(1000).toggle(1500)
+                $('#img1').delay(2000).toggle(2000)
+                $('#tb1').delay(3000).toggle(1500)
+                $('#ul1').delay(4000).toggle(1500)
+                $('#contack').delay(5000).toggle(1500)
+            })
+        </script>
 </head>
-<body>
-    <center>
-        <h1>Profile</h1>
-        <h2>Settawut Dangnoi</h2>
+<body style="background-color: #071630;">
+    <h1 id="pf" class="rounded-pil col-md-2 col-md-offset-5 " style="width: 20%;color:white;font-size: 50px" > Profile</h1>
+    <div id="body1" style="background-color: #dba401;height:  50%">
+        <h2 id="name" class="container-fluid" style="color: white" >Settawut Dangnoi</h2> <br>
         <a href="https://www.google.com/">
-            <img src="https://scontent.fbkk15-1.fna.fbcdn.net/v/t1.0-9/32327042_2016525178390217_8172850373720014848_n.jpg?_nc_cat=111&_nc_ht=scontent.fbkk15-1.fna&oh=232a54c96e597bf6611009561683fbca&oe=5CEF996D" alt="google">
+            <img  id="img1" src="https://o.remove.bg/downloads/896bc2d2-7dcb-4779-9c10-f44c2da86520/Capture-removebg.png" class="rounded" style="position:absolute; right:0;" alt="google">
         </a>
-    </center>
-    <table>
+        <table id="tb1" class="table row col-md-5 col-md-offset-15" style="width: 80%;font-size: 23px; margin-left: 10px">
         <tr>
             <td>Name</td>
             <td>Settawut Dangnoi</td>
         </tr>
         <tr>
-            <td>Age</td>
+            <td >Age</td>
             <td>22</td>
         </tr>
         <tr>
@@ -53,12 +38,24 @@
             <td>  091-8477975</td>
         </tr>
     </table>
-    <div>My Favourite Food</div>
-    <ul>
+     <br>
+    <div id="ul1" style=" margin-left: 10px; font-size: 23px">
+    <div  class="row col-md-2 col-md-offset-5">My Favourite Food</div>
+    <ul  class="col-md-2 col-md-offset-5" style="align: center">
         <li>Beef Stew</li>
         <li>Japanese Food</li>
         <li>noodle</li>
     </ul>
+    </div>
+    </div><br>
+    <div id="contack" style="color: white; font-size: 20px">
+        Contact<br>
+        Phone : 091-8477975 <br>
+        Email : 5835512099@psu.ac.th
+    </div>
+
+   
+    
 </body>    
 
 </html>
